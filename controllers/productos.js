@@ -52,6 +52,7 @@ const crearProducto = async (req, res = response) => {
   const data = {
     nombre: body.nombre.toUpperCase(),
     usuario: req.usuario._id,
+    categoria: body.categoria
   };
 
   const producto = new Producto(data);
